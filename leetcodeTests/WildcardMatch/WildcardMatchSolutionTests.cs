@@ -83,5 +83,68 @@ namespace leetcode.WildcardMatch.Tests
             var result = solution.IsMatch(input, pattern);
             Assert.IsFalse(result);
         }
+        [TestMethod]
+        public void IsMatch_LeetcodeCase1397()
+        {
+            var solution = new WildcardMatchSolution();
+            var input = "aa";
+            var pattern = "a*";
+            var result = solution.IsMatch(input, pattern);
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void IsMatch_LeetcodeCase1432()
+        {
+            var solution = new WildcardMatchSolution();
+            var input = "ab";
+            var pattern = "?*";
+            var result = solution.IsMatch(input, pattern);
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void IsMatch_LeetcodeCase1538()
+        {
+            var solution = new WildcardMatchSolution();
+            var input = "a";
+            var pattern = "a*";
+            var result = solution.IsMatch(input, pattern);
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void IsMatch_LeetcodeCase1600()
+        {
+            var solution = new WildcardMatchSolution();
+            var input = "b";
+            var pattern = "?*?";
+            var result = solution.IsMatch(input, pattern);
+            Assert.IsFalse(result);
+        }
+        [TestMethod]
+        public void IsMatch_LeetcodeCase1769()
+        {
+            var solution = new WildcardMatchSolution();
+            var input = "aa";
+            var pattern = "*";
+            var result = solution.IsMatch(input, pattern);
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void IsMatch_LeetcodeCase1798()
+        {
+            var solution = new WildcardMatchSolution();
+            var input = "";
+            var pattern = "*";
+            var result = solution.IsMatch(input, pattern);
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void IsMatch_LeetcodeCase1802()
+        {
+            var solution = new WildcardMatchSolution();
+            var input = "ho";
+            var pattern = "**ho";
+            var result = solution.IsMatch(input, pattern);
+            Assert.IsTrue(result);
+        }
     }
 }

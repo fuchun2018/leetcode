@@ -10,27 +10,23 @@ namespace leetcode.WildcardMatch
     {
         public bool IsMatch(string s, string p)
         {
-            Stack<char> stack = new Stack<char>();
-            foreach (var item in s)
-            {
-                stack.Push(item);
-            }
-            for (int i = p.Length; i > 0 ; i--)
-            {
-                var pattern = p[i - 1];
+            bool[,] result = new bool[s.Length+1, p.Length+1];
 
-                if (pattern == '*')
-                {
-                    if (i == 1) return true;
-                    var endChar = p[i - 2];
-                    while ((stack.Count() > 0) && (stack.Peek() != endChar)) stack.Pop();
-                }
-                else if ((pattern == '?') && (stack.Count() > 0)) stack.Pop();
-                else if ((stack.Count() > 0) && (stack.Peek() == pattern)) stack.Pop();
-                else if (stack.Count() == 0) return false;
-                else break;
+            result[0, 0] = true;
+
+            for (int i = 1; i <= p.Length; i++)
+            {
+                result[0, i] = p[i-1] == '*' && result[0, i - 1];
             }
-            return stack.Count == 0;
+            for (int i = 1; i < result.GetLength(0); i++)
+            {
+                for (int j = 1; j < result.GetLength(1); j++)
+                {
+                    if (p[j - 1] == '*') result[i, j] = result[i - 1, j] || result[i, j - 1];
+                    else if ((p[j - 1] == '?') || (p[j - 1] == s[i - 1])) result[i, j] = result[i - 1, j - 1];
+                }
+            }
+            return result[s.Length, p.Length];
         }
     }
 }
