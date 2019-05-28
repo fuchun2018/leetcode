@@ -15,8 +15,28 @@ namespace leetcode.WildcardMatch.Tests
         public void IsMatchTest()
         {
             var solution = new WildcardMatchSolution();
-            var result = solution.IsMatch(string.Empty, string.Empty);
+            var input = "aa ";
+            var pattern = "a";
+            var result = solution.IsMatch(input, pattern);
             Assert.IsFalse(result);
+        }
+        [TestMethod()]
+        public void IsMatchTestWithQuestionMark()
+        {
+            var solution = new WildcardMatchSolution();
+            var input = "aa";
+            var pattern = "??";
+            var result = solution.IsMatch(input, pattern);
+            Assert.IsTrue(result);
+        }
+        [TestMethod()]
+        public void IsMatchTestWithAsteriskMark()
+        {
+            var solution = new WildcardMatchSolution();
+            var input = "aa";
+            var pattern = "*";
+            var result = solution.IsMatch(input, pattern);
+            Assert.IsTrue(result);
         }
     }
 }
