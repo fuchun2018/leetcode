@@ -74,5 +74,14 @@ namespace leetcode.WildcardMatch.Tests
             var result = solution.IsMatch(input, pattern);
             Assert.IsTrue(result);
         }
+        [TestMethod]
+        public void IsMatch_LeetcodeCase5()
+        {
+            var solution = new WildcardMatchSolution();
+            var input = "aab";
+            var pattern = "c*a*b";
+            var result = solution.IsMatch(input, pattern);
+            Assert.IsFalse(result);
+        }
     }
 }

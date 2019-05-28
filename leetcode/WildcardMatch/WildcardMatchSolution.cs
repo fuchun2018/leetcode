@@ -18,14 +18,16 @@ namespace leetcode.WildcardMatch
             for (int i = p.Length; i > 0 ; i--)
             {
                 var pattern = p[i - 1];
-                if (pattern == '?') stack.Pop();
-                else if (pattern == '*')
+
+                if (pattern == '*')
                 {
                     if (i == 1) return true;
                     var endChar = p[i - 2];
-                    while (stack.Peek() != endChar) stack.Pop();
+                    while ((stack.Count() > 0) && (stack.Peek() != endChar)) stack.Pop();
                 }
-                else if (stack.Peek() == pattern) stack.Pop();
+                else if ((pattern == '?') && (stack.Count() > 0)) stack.Pop();
+                else if ((stack.Count() > 0) && (stack.Peek() == pattern)) stack.Pop();
+                else if (stack.Count() == 0) return false;
                 else break;
             }
             return stack.Count == 0;
