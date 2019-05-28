@@ -38,5 +38,41 @@ namespace leetcode.WildcardMatch.Tests
             var result = solution.IsMatch(input, pattern);
             Assert.IsTrue(result);
         }
+        [TestMethod]
+        public void IsMatch_Case_4()
+        {
+            var solution = new WildcardMatchSolution();
+            var input = "adceb";
+            var pattern = "a*b";
+            var result = solution.IsMatch(input, pattern);
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void IsMatch_Case_5()
+        {
+            var solution = new WildcardMatchSolution();
+            var input = "acdcb";
+            var pattern = "a*c?b";
+            var result = solution.IsMatch(input, pattern);
+            Assert.IsFalse(result);
+        }
+        [TestMethod]
+        public void IsMatch_EmptyString()
+        {
+            var solution = new WildcardMatchSolution();
+            var input = "aaa";
+            var pattern = "*";
+            var result = solution.IsMatch(input, pattern);
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void IsMatch_LeetcodeCase3()
+        {
+            var solution = new WildcardMatchSolution();
+            var input = "abceb";
+            var pattern = "*a*b";
+            var result = solution.IsMatch(input, pattern);
+            Assert.IsTrue(result);
+        }
     }
 }

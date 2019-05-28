@@ -21,7 +21,7 @@ namespace leetcode.WildcardMatch
                 if (pattern == '?') stack.Pop();
                 else if (pattern == '*')
                 {
-                    if (p.Length == 1) return true;
+                    if (i == 1) return true;
                     var endChar = p[i - 2];
                     while (stack.Peek() != endChar) stack.Pop();
                 }
