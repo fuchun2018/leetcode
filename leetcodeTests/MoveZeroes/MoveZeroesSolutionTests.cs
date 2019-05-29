@@ -17,5 +17,12 @@ namespace leetcode.MoveZeroes.Tests
             var solution = new MoveZeroesSolution();
              solution.MoveZeroes(new int[] { 0, 1, 0, 3, 12 });
         }
+
+        [TestMethod()]
+        public void MoveZeroesTest_Case_2()
+        {
+            var solution = new MoveZeroesSolution();
+            solution.MoveZeroes(new int[] { 1, 0, 0, 2, 0, 1, 0, 133,381,33,13 });
+        }
     }
 }
