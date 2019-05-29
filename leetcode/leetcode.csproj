@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="DivideTwoIntegers\DivideSolution.cs" />
     <Compile Include="FizzBuzz\FizzBuzzSolution.cs" />
+    <Compile Include="MoveZeroes\MoveZeroesSolution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReverseString\ReverseStringSolution.cs" />
     <Compile Include="SingleNumber\SingleNumberSolution.cs" />
