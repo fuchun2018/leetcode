@@ -18,5 +18,13 @@ namespace leetcode.FizzBuzz.Tests
             var result = solution.FizzBuzz(0);
             Assert.IsNotNull(result);
         }
+
+        [TestMethod()]
+        public void FizzBuzzTest_Case_1()
+        {
+            var solution = new FizzBuzzSolution();
+            var result = solution.FizzBuzz(15);
+            Assert.IsNotNull(result);
+        }
     }
 }
