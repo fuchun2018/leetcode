@@ -59,6 +59,7 @@
     <Compile Include="DivideTwoIntegers\DivideSolutionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReverseString\ReverseStringSolutionTests.cs" />
+    <Compile Include="SingleNumber\SingleNumberSolutionTests.cs" />
     <Compile Include="WildcardMatch\WildcardMatchSolutionTests.cs" />
   </ItemGroup>
   <ItemGroup>
