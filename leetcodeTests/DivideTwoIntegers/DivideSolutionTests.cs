@@ -16,8 +16,8 @@ namespace leetcode.DivideTwoIntegers.Tests
         {
             var solution = new DivideSolution();
 
-            var result = solution.Divide(100, 3);
-            Assert.AreEqual(result, 33);
+            var result = solution.Divide(5, 1);
+            Assert.AreEqual(result, 5);
         }
 
         [TestMethod()]
@@ -36,6 +36,32 @@ namespace leetcode.DivideTwoIntegers.Tests
 
             var result = solution.Divide(-10, -3);
             Assert.AreEqual(result, 3);
+        }
+
+        [TestMethod]
+        public void DivideTest_LeetcodeCase5()
+        {
+            var solution = new DivideSolution();
+
+            var result = solution.Divide(-2147483648, -1);
+            Assert.AreEqual(result, 2147483647);
+        }
+        [TestMethod]
+        public void DivideTest_LeetcodeCase980()
+        {
+            var solution = new DivideSolution();
+
+            var result = solution.Divide(1, 1);
+            Assert.AreEqual(result, 1);
+        }
+
+        [TestMethod]
+        public void DivideTest_LeetcodeCase988()
+        {
+            var solution = new DivideSolution();
+
+            var result = solution.Divide(-2147483648, -2147483648);
+            Assert.AreEqual(result, 1);
         }
     }
 }
