@@ -10,7 +10,19 @@ namespace leetcode.SingleNumber
     {
         public int SingleNumber(int[] nums)
         {
-            return -1;
+            if (nums.Length < 2) return nums[0];
+            Array.Sort(nums);
+            for (int i = 0; i < nums.Length; i+=2)
+            {
+                if (i + 1 != nums.Length)
+                {
+                    if  (nums[i] != nums[i + 1])
+                        return nums[i];
+                }
+                else
+                    if (nums[i] != nums[i - 1]) return nums[i];
+            }
+            return 0;
         }
     }
 }
