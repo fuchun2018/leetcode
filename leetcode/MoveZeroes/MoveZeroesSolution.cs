@@ -15,15 +15,10 @@ namespace leetcode.MoveZeroes
             {
                 if(nums[i] != 0)
                 {
-                    for (int j = i; j > leadPosition; j--)
-                    {
-                        var temp = nums[j];
-                        nums[j] = nums[j-1];
-                        nums[j - 1] = temp;
-                    }
-                    leadPosition++;
+                    nums[leadPosition++] = nums[i];
                 }
             }
+            while (leadPosition < nums.Length) nums[leadPosition++] = 0;
         }
     }
 }
