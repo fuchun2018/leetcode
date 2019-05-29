@@ -10,7 +10,14 @@ namespace leetcode.ReverseString
     {
         public void ReverseString(char[] s)
         {
-
+            if (s.Length < 2) return;
+            int middle = s.Length / 2;
+            for (int i = 0; i < middle; i++)
+            {
+                var temp = s[i];
+                s[i] = s[s.Length - 1 - i];
+                s[s.Length - 1 - i] = temp;
+            }
         }
     }
 }

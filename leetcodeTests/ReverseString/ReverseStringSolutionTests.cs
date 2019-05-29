@@ -17,5 +17,12 @@ namespace leetcode.ReverseString.Tests
             var solution = new ReverseStringSolution();
             solution.ReverseString("hello".ToCharArray());
         }
+
+        [TestMethod()]
+        public void ReverseStringTest_Case2()
+        {
+            var solution = new ReverseStringSolution();
+            solution.ReverseString("Hannah".ToCharArray());
+        }
     }
 }
