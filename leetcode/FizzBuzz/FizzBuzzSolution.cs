@@ -14,12 +14,10 @@ namespace leetcode.FizzBuzz
             var result = new List<string>();
             for (int index = 1; index <= n; index++)
             {
-                string push;
-                if (index % (3 * 5) == 0) push = "FizzBuzz";
-                else if (index % 3 == 0) push = "Fizz";
-                else if (index % 5 == 0) push = "Buzz";
-                else push = index.ToString();
-                result.Add(push);
+                if (index % (3 * 5) == 0) result.Add("FizzBuzz");
+                else if (index % 3 == 0) result.Add("Fizz");
+                else if (index % 5 == 0) result.Add("Buzz");
+                else result.Add(index.ToString());
             }
             return result;
         }
