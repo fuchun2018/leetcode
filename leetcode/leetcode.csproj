@@ -44,6 +44,7 @@
     <Compile Include="DivideTwoIntegers\DivideSolution.cs" />
     <Compile Include="GenerateParenthesis\GenerateParenthesisSolution.cs" />
     <Compile Include="FizzBuzz\FizzBuzzSolution.cs" />
+    <Compile Include="HappyNumber\HappyNumberSolution.cs" />
     <Compile Include="MoveZeroes\MoveZeroesSolution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReverseString\ReverseStringSolution.cs" />
