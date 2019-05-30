@@ -57,6 +57,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="DivideTwoIntegers\DivideSolutionTests.cs" />
+    <Compile Include="GenerateParenthesis\GenerateParenthesisSolutionTests.cs" />
     <Compile Include="FizzBuzz\FizzBuzzSolutionTests.cs" />
     <Compile Include="MoveZeroes\MoveZeroesSolutionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
