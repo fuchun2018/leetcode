@@ -19,5 +19,33 @@ namespace leetcode.TrapRainWater.Tests
             var result = solution.Trap(input);
             Assert.AreEqual(result, 6);
         }
+
+        [TestMethod()]
+        public void TrapTest_leetcode_testcase_4()
+        {
+            var solution = new TrapRainWaterSolution();
+            var input = new int[] { 0, 2, 0 };
+            var result = solution.Trap(input);
+            Assert.AreEqual(result, 0);
+        }
+
+
+        [TestMethod()]
+        public void TrapTest_leetcode_testcase_18()
+        {
+            var solution = new TrapRainWaterSolution();
+            var input = new int[] { 2, 0, 2 };
+            var result = solution.Trap(input);
+            Assert.AreEqual(result, 2);
+        }
+
+        [TestMethod()]
+        public void TrapTest_Case2()
+        {
+            var solution = new TrapRainWaterSolution();
+            var input = new int[] { 0, 5, 3, 4, 0 };
+            var result = solution.Trap(input);
+            Assert.AreEqual(result, 1);
+        }
     }
 }

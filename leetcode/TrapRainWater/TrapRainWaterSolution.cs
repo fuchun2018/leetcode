@@ -10,16 +10,26 @@ namespace leetcode.TrapRainWater
     {
         public int Trap(int[] height)
         {
+            var list = new SortedSet<int>();
+            foreach (var item in height)
+            {
+                if ((list.Contains(item) == false) && (item > 0))
+                    list.Add(item);
+            }
             int result = 0;
             int low = 0, high = height.Length - 1;
-            int peak = 1;
-            while(low < high)
+            int peak = 0;
+            while (low < high)
             {
-                while (height[low] != peak) low++;
-                while (height[high] != peak) high--;
+                var item = list.First();
+                var diff = item - peak;
+                peak = item;
+                while ((height[low] < peak) && low < high) low++;
+                while ((height[high] < peak) && high > 0) high--;
                 for (int i = low; i < high; i++)
-                    if (height[i] <= peak - 1) result++;
-                peak++;
+                    if (height[i] < peak) result += diff;
+                list.Remove(peak);
+                if (list.Count() == 0) break;
             }
             return result;
         }
