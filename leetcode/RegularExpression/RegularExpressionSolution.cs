@@ -10,7 +10,25 @@ namespace leetcode.RegularExpression
     {
         public bool IsMatch(string s, string p)
         {
-            return false;
+            var dp = new bool[s.Length + 1, p.Length + 1];
+            dp[0, 0] = true;
+            for (int i = 0; i < p.Length; i++) dp[0, i + 1] = (p[i] == '*' && dp[0, i - 1]);
+
+            for (int i = 1; i < dp.GetLength(0); i++)
+            {
+                for (int j = 1; j < dp.GetLongLength(1); j++)
+                {
+                    if (p[j - 1] == '*')
+                    {
+                        var c = p[j - 2];
+                        if (c == '.') dp[i, j] = true;
+                        else if (s[i - 1] == c) dp[i, j] = dp[i - 1, j - 1];
+                        else dp[i, j] = dp[i - 1, j - 1];
+                    }
+                    else if ((p[j - 1] == '.') || (p[j - 1] == s[i - 1])) dp[i, j] = dp[i - 1, j - 1];
+                }
+            }
+            return dp[s.Length, p.Length];
         }
     }
 }
