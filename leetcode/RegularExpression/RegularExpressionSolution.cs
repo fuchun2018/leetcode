@@ -20,10 +20,10 @@ namespace leetcode.RegularExpression
                 {
                     if (p[j - 1] == '*')
                     {
-                        var c = p[j - 2];
-                        if (c == '.') dp[i, j] = true;
-                        else if (s[i - 1] == c) dp[i, j] = dp[i - 1, j - 1];
-                        else dp[i, j] = dp[i - 1, j - 1];
+                        if (s[i - 1] == p[j - 2] || p[j - 2] == '.')
+                            dp[i, j] |= dp[i - 1, j] || dp[i, j - 1];
+
+                        else dp[i, j] = dp[i, j - 2];
                     }
                     else if ((p[j - 1] == '.') || (p[j - 1] == s[i - 1])) dp[i, j] = dp[i - 1, j - 1];
                 }
