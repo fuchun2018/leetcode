@@ -38,5 +38,13 @@ namespace leetcode.RegularExpression.Tests
         {
             Assert.IsTrue(new RegularExpressionSolution().IsMatch("aaa", "ab*a*c*a"));
         }
+        
+
+        [TestMethod()]
+        public void IsMatchTest_Leetcode_432()
+        {
+            //Assert.IsTrue(new RegularExpressionSolution().IsMatch("asda", "asd.*a"));
+            Assert.IsTrue(new RegularExpressionSolution().IsMatch("aasdfasdfasdfasdfas", "aasdf.*asdf.*asdf.*asdf.*s"));
+        }
     }
 }
