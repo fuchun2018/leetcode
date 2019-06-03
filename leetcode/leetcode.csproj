@@ -47,6 +47,7 @@
     <Compile Include="GenerateParenthesis\GenerateParenthesisSolution.cs" />
     <Compile Include="FizzBuzz\FizzBuzzSolution.cs" />
     <Compile Include="HappyNumber\HappyNumberSolution.cs" />
+    <Compile Include="IsAnagram\IsAnagramSolution.cs" />
     <Compile Include="MajorityElement\MajorityElementSolution.cs" />
     <Compile Include="MoveZeroes\MoveZeroesSolution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
