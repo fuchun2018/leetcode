@@ -10,7 +10,22 @@ namespace leetcode.LongestConsecutive
     {
         public int LongestConsecutive(int[] nums)
         {
-            return 1;
+            if (nums.Length < 2) return nums.Count();
+            var hashSet = new HashSet<int>(nums);
+
+            int result= 0;
+
+            foreach (var item in nums)
+            {
+                var count = 0;
+                var iterate = item;
+                while (hashSet.Contains(iterate++))
+                {
+                    count++;
+                }
+                result = count > result ? count : result;
+            }
+            return result;
         }
     }
 }
