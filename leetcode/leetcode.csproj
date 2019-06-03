@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="common\ListNode.cs" />
+    <Compile Include="DeleteNodeInLinkedList\DeleteNodeSolution.cs" />
     <Compile Include="DivideTwoIntegers\DivideSolution.cs" />
     <Compile Include="GenerateParenthesis\GenerateParenthesisSolution.cs" />
     <Compile Include="FizzBuzz\FizzBuzzSolution.cs" />
