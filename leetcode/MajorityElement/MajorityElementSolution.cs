@@ -10,14 +10,7 @@ namespace leetcode.MajorityElement
     {
         public int MajorityElement(int[] nums)
         {
-            SortedList<int, int> list = new SortedList<int, int>();
-                
-            foreach (var item in nums)
-            {
-                if (list.ContainsKey(item)) list[item]++;
-                else list.Add(item, 1);
-            }
-            return list.OrderByDescending(t => t.Value).First().Key;
+            return nums.GroupBy(t => t).Where(u => u.Count() > nums.Length / 2).OrderByDescending(v => v.Count()).FirstOrDefault().Key;
         }
     }
 }
