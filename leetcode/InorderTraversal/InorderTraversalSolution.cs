@@ -10,12 +10,21 @@ namespace leetcode.InorderTraversal
     {
         public IList<int> InorderTraversal(TreeNode root)
         {
-            if (root == null) return null;
-            if (root.left == null && root.right == null) return new List<int> { root.val };
             var result = new List<int>();
-            if (root.left != null) result.AddRange(InorderTraversal(root.left));
-            result.Add(root.val);
-            if (root.right != null) result.AddRange(InorderTraversal(root.right));
+            if (root == null) return result;
+            Stack<TreeNode> stack = new Stack<TreeNode>();
+            TreeNode cursor = root;
+            while (cursor != null || stack.Count > 0)
+            {
+                while (cursor != null)
+                {
+                    stack.Push(cursor);
+                    cursor = cursor.left;
+                }
+                cursor = stack.Pop();
+                result.Add(cursor.val);
+                cursor = cursor.right;
+            }
             return result;
         }
     }
