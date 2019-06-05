@@ -57,6 +57,7 @@
     <Compile Include="RegularExpression\RegularExpressionSolution.cs" />
     <Compile Include="ReverseString\ReverseStringSolution.cs" />
     <Compile Include="SingleNumber\SingleNumberSolution.cs" />
+    <Compile Include="ThreeSum\ThreeSumSolution.cs" />
     <Compile Include="TrapRainWater\TrapRainWaterSolution.cs" />
     <Compile Include="WildcardMatch\WildcardMatchSolution.cs" />
   </ItemGroup>

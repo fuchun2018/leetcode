@@ -70,6 +70,7 @@
     <Compile Include="RegularExpression\RegularExpressionSolutionTests.cs" />
     <Compile Include="ReverseString\ReverseStringSolutionTests.cs" />
     <Compile Include="SingleNumber\SingleNumberSolutionTests.cs" />
+    <Compile Include="ThreeSum\ThreeSumSolutionTests.cs" />
     <Compile Include="TrapRainWater\TrapRainWaterSolutionTests.cs" />
     <Compile Include="WildcardMatch\WildcardMatchSolutionTests.cs" />
   </ItemGroup>
