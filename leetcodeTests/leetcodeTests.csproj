@@ -61,6 +61,7 @@
     <Compile Include="GenerateParenthesis\GenerateParenthesisSolutionTests.cs" />
     <Compile Include="FizzBuzz\FizzBuzzSolutionTests.cs" />
     <Compile Include="HappyNumber\HappyNumberSolutionTests.cs" />
+    <Compile Include="InorderTraversal\InorderTraversalSolutionTests.cs" />
     <Compile Include="IsAnagram\IsAnagramSolutionTests.cs" />
     <Compile Include="LongestConsecutive\LongestConsecutiveSolutionTests.cs" />
     <Compile Include="MajorityElement\MajorityElementSolutionTests.cs" />

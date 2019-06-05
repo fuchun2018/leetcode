@@ -42,11 +42,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="common\ListNode.cs" />
+    <Compile Include="common\TreeNode.cs" />
     <Compile Include="DeleteNodeInLinkedList\DeleteNodeSolution.cs" />
     <Compile Include="DivideTwoIntegers\DivideSolution.cs" />
     <Compile Include="GenerateParenthesis\GenerateParenthesisSolution.cs" />
     <Compile Include="FizzBuzz\FizzBuzzSolution.cs" />
     <Compile Include="HappyNumber\HappyNumberSolution.cs" />
+    <Compile Include="InorderTraversal\InorderTraversalSolution.cs" />
     <Compile Include="IsAnagram\IsAnagramSolution.cs" />
     <Compile Include="LongestConsecutive\LongestConsecutiveSolution.cs" />
     <Compile Include="MajorityElement\MajorityElementSolution.cs" />
