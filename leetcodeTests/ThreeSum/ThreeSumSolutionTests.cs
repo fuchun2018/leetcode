@@ -41,5 +41,61 @@ namespace leetcode.ThreeSum.Tests
             };
             var solution = new ThreeSumSolution().ThreeSum(input);
         }
+        [TestMethod()]
+        public void ThreeSumTest_Leetcode_case46()
+        {
+            var input = new int[] { 1,-1,-1,0 };
+            var result = new List<List<int>>
+            {
+                new List<int>()
+                {
+                    -1,0,1
+                }
+            };
+            var solution = new ThreeSumSolution().ThreeSum(input);
+        }
+
+        [TestMethod()]
+        public void ThreeSumTest_Leetcode_case52()
+        {
+            var input = new int[] { -2, 0, 1, 1, 2};
+            var result = new List<List<int>>
+            {
+                new List<int>()
+                {
+                    -1,0,1
+                }
+            };
+            var solution = new ThreeSumSolution().ThreeSum(input);
+        }
+
+        [TestMethod()]
+        public void ThreeSumTest_Leetcode_case65()
+        {
+            var input = new int[] { 0, -4, -1, -4, -2, -3, 2 };
+            var result = new List<List<int>>
+            {
+                new List<int>()
+                {
+                    -1,0,1
+                }
+            };
+            var solution = new ThreeSumSolution().ThreeSum(input);
+        }
+
+
+        [TestMethod()]
+        public void ThreeSumTest_Leetcode_case57()
+        {
+            var input = new int[] { 3, 0, -2, -1, 1, 2 };
+            var result = new List<List<int>>
+            {
+                new List<int>()
+                {
+                    -1,0,1
+                }
+            };
+            var solution = new ThreeSumSolution().ThreeSum(input);
+        }
     }
 }

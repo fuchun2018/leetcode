@@ -25,12 +25,12 @@ namespace leetcode.ThreeSum
                     if(_ == 0)
                     {
                         result.Add(new List<int> { nums[i], nums[left], nums[right] });
-                        do { left++; } while (left < nums.Length - 1 && nums[left + 1] == nums[left]);
-                        do { right--; } while (right > 0 &&  nums[right - 1] == nums[right]);
+                        do { left++; } while (left < nums.Length - 1 && nums[left - 1] == nums[left]);
+                        do { right--; } while (right > 0 &&  nums[right + 1] == nums[right]);
                     }
                     else
                     {
-                        if (_ > nums[left]) left++;
+                        if (nums[i] < 0 - nums[left] - nums[right]) left++;
                         else right--;
                     }
                 }
