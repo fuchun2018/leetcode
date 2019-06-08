@@ -66,6 +66,7 @@
     <Compile Include="LongestConsecutive\LongestConsecutiveSolutionTests.cs" />
     <Compile Include="MajorityElement\MajorityElementSolutionTests.cs" />
     <Compile Include="MoveZeroes\MoveZeroesSolutionTests.cs" />
+    <Compile Include="Permute\PermuteSolutionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegularExpression\RegularExpressionSolutionTests.cs" />
     <Compile Include="ReverseString\ReverseStringSolutionTests.cs" />
