@@ -15,7 +15,7 @@ namespace leetcode.Permute.Tests
         public void PermuteTest()
         {
             var solution = new PermuteSolution();
-            var result = solution.Permute(new int[] { 1, 2, 3 });
+            var result = solution.Permute(new int[] { 1 });
             Assert.IsNotNull(result);
         }
     }
