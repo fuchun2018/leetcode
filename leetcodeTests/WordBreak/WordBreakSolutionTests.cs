@@ -59,5 +59,23 @@ namespace leetcode.WordBreak.Tests
             var result = solution.WordBreak(s, dict);
             Assert.AreNotEqual(0, result.Count);
         }
+
+        [TestMethod]
+        public void WordBreakTest_Leetcode28()
+        {
+            var solution = new WordBreakSolution();
+            var s = "aaaaaaa";
+            var dict = new string[] { "aaaa", "aa", "a" };
+            var expect = new List<string>
+            {
+                "a a a a a a a", "aa a a a a a", "a aa a a a a", "a a aa a a a", "aa aa a a a", "aaaa a a a", "a a a aa a a", "aa a aa a a", "a aa aa a a", "a aaaa a a", "a a a a aa a", "aa a a aa a", "a aa a aa a", "a a aa aa a", "aa aa aa a", "aaaa aa a", "a a aaaa a", "aa aaaa a", "a a a a a aa", "aa a a a aa", "a aa a a aa", "a a aa a aa", "aa aa a aa", "aaaa a aa", "a a a aa aa", "aa a aa aa", "a aa aa aa", "a aaaa aa", "a a a aaaa", "aa a aaaa", "a aa aaaa"
+            };
+            var result = solution.WordBreak(s, dict);
+            Assert.AreEqual(expect.Count, result.Count);
+            foreach (var item in result)
+            {
+                Assert.IsTrue(expect.Contains(item));
+            }
+        }
     }
 }
