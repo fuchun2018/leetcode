@@ -4,13 +4,13 @@ Please leave a star if you like my solution 😊
 
 I am starting my solving-Leetcode-problem journey since May 2019 by Visual studio 2019 and C#. Besides source code which solving specific problems, there are test cases in another solution which contains all the cases from examples, Leetcode Online Judge, or myself.
 
-These might not the best solutions in the world, but I am trying to slove these problems clean and easy. In fact, if you want to get a best solution. You know you can get a sample from the distribution chart. That might be the place you are looking for.
+These might not the best solutions in the world, but I am trying to slove these problems clean and easy. In fact, if you want to get a best solution, you know you can get a sample from the distribution chart. That might be the place you are looking for.
 
 I highly recommand leetcode users keep all the trail when you are trying to solve a problem, either it is a easy problem or a difficult one. You can keep it in you github, in your blog, in your diary, in a Trello, or anywhere you are comfortable (in my opinion, instead of mark source code or leave comments behind or after your source code, make your source code readable will be more efficiency). 
 
 > The doing is often more important than the outcome. Arthur Ashe, Tennis Player
 
-Meanwhile, form a good habit on coding. For example, naming, trying not to use some meanless variable name such as 'a', 'b' 'str'. trying not to be affected by leetcode. Get a copy of coding convention from your familiar language and follow the rules.
+Meanwhile, please form a good habit when you are coding. For example, naming, trying not to use some meanless variable name such as 'a', 'b' 'str', even 'i' in a for while. Trying not to be affected by leetcode. You can get a copy of coding convention from your familiar language on the internet and follow the rules. For example,
 
 https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions
 
