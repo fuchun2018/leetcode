@@ -69,6 +69,7 @@
     <Compile Include="Permute\PermuteSolutionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegularExpression\RegularExpressionSolutionTests.cs" />
+    <Compile Include="ReverseLinkedList\ReverseListSolutionTests.cs" />
     <Compile Include="ReverseString\ReverseStringSolutionTests.cs" />
     <Compile Include="SingleNumber\SingleNumberSolutionTests.cs" />
     <Compile Include="ThreeSum\ThreeSumSolutionTests.cs" />
