@@ -10,7 +10,18 @@ namespace leetcode.ReverseLinkedList
     {
         public ListNode ReverseList(ListNode head)
         {
-            return null;
+            if (head == null || (head.next == null)) return head;
+            var result = head;
+            var cursor = result.next;
+            result.next = null;
+            while (cursor != null)
+            {
+                var temp = cursor.next;
+                cursor.next = result;
+                result = cursor;
+                cursor = temp;
+            }
+            return result;
         }
     }
 }
