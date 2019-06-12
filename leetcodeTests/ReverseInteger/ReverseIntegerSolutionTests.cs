@@ -17,8 +17,27 @@ namespace leetcode.ReverseInteger.Tests
             var solution = new ReverseIntegerSolution();
             //var result = 123 % 100;
             //var res2 = 123 / 100;
-            //Assert.AreEqual(solution.Reverse(-123), -321);
-            solution.Reverse(1534236469);
+            Assert.AreEqual(solution.Reverse(-123), -321);
+        }
+        [TestMethod]
+        public void ReverseTest_LeetcodeCase1027()
+        {
+            var solution = new ReverseIntegerSolution();
+            Assert.AreEqual(solution.Reverse(1534236469), 0);
+        }
+
+        [TestMethod]
+        public void ReverseTest_LeetcodeCase1027_2()
+        {
+            var solution = new ReverseIntegerSolution();
+            Assert.AreEqual(solution.Reverse(-1534236469), 0);
+        }
+
+        [TestMethod]
+        public void ReverseTest_LeetcodeCase1027_3()
+        {
+            var solution = new ReverseIntegerSolution();
+            Assert.AreEqual(solution.Reverse(-2147483412), -2143847412);
         }
     }
 }

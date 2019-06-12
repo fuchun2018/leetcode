@@ -18,8 +18,9 @@ namespace leetcode.ReverseInteger
                 var remainder = x % 10;
                 result = result * 10 + remainder;
                 x /= 10;
+                if (x != 0 && ((result > int.MaxValue / 10) || (result < int.MinValue / 10))) return 0;
             }
-            return sign ? result : result * -1;
+            return result;
         }
     }
 }
