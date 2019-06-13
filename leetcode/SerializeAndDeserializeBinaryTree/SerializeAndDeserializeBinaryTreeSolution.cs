@@ -11,7 +11,8 @@ namespace leetcode.SerializeAndDeserializeBinaryTree
         // Encodes a tree to a single string.
         public string serialize(TreeNode root)
         {
-            return string.Empty;
+            if (root == null) return string.Empty + ",";
+            return root.val + "," + serialize(root.left) + serialize(root.right);
         }
 
         // Decodes your encoded data to tree.
