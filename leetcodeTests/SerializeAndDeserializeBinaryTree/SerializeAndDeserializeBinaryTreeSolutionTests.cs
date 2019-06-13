@@ -42,5 +42,14 @@ namespace leetcode.SerializeAndDeserializeBinaryTree.Tests
             var expect = ",";
             Assert.AreEqual(expect, result);
         }
+
+        [TestMethod()]
+        public void deserializeTest()
+        {
+            var solution = new SerializeAndDeserializeBinaryTreeSolution();
+            var input = "1,2,,,3,,,";
+            var result = solution.deserialize(input);
+            Assert.IsNotNull(result);
+        }
     }
 }

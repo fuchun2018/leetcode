@@ -18,7 +18,23 @@ namespace leetcode.SerializeAndDeserializeBinaryTree
         // Decodes your encoded data to tree.
         public TreeNode deserialize(string data)
         {
-            return null;
+            if (string.IsNullOrEmpty(data) || (data == ",")) return null;
+            var node = new Queue<string>(data.Split(','));
+            var result = BinaryTreeRebuild(node);
+            return result;
+        }
+
+        public TreeNode BinaryTreeRebuild(Queue<string> queue)
+        {
+            if((queue == null) || queue.Count == 0) return null;
+            var element = queue.Dequeue();
+            if (element == "") return null;
+            var node = new TreeNode(int.Parse(element))
+            {
+                left = BinaryTreeRebuild(queue),
+                right = BinaryTreeRebuild(queue)
+            };
+            return node;
         }
     }
 }
