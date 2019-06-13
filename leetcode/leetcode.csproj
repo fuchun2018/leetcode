@@ -59,6 +59,7 @@
     <Compile Include="ReverseInteger\ReverseIntegerSolution.cs" />
     <Compile Include="ReverseLinkedList\ReverseListSolution.cs" />
     <Compile Include="ReverseString\ReverseStringSolution.cs" />
+    <Compile Include="SerializeAndDeserializeBinaryTree\SerializeAndDeserializeBinaryTreeSolution.cs" />
     <Compile Include="SingleNumber\SingleNumberSolution.cs" />
     <Compile Include="ThreeSum\ThreeSumSolution.cs" />
     <Compile Include="TrapRainWater\TrapRainWaterSolution.cs" />

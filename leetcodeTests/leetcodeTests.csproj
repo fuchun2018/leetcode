@@ -72,6 +72,7 @@
     <Compile Include="ReverseInteger\ReverseIntegerSolutionTests.cs" />
     <Compile Include="ReverseLinkedList\ReverseListSolutionTests.cs" />
     <Compile Include="ReverseString\ReverseStringSolutionTests.cs" />
+    <Compile Include="SerializeAndDeserializeBinaryTree\SerializeAndDeserializeBinaryTreeSolutionTests.cs" />
     <Compile Include="SingleNumber\SingleNumberSolutionTests.cs" />
     <Compile Include="ThreeSum\ThreeSumSolutionTests.cs" />
     <Compile Include="TrapRainWater\TrapRainWaterSolutionTests.cs" />
