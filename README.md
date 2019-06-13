@@ -27,4 +27,4 @@ Finally, enjoy your leetcode journey!
 |412|[Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)|[Solution](https://github.com/fuchun2018/leetcode/blob/master/leetcode/FizzBuzz/FizzBuzzSolution.cs) |Easy||
 |22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)|[Solution](https://github.com/fuchun2018/leetcode/blob/master/leetcode/GenerateParenthesis/GenerateParenthesisSolution.cs) |Medium||
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|[Solution](https://github.com/fuchun2018/leetcode/blob/master/leetcode/ReverseLinkedList/ReverseListSolution.cs) |Easy||
-|297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)|[Solution](https://github.com/fuchun2018/leetcode/blob/master/leetcode/SerializeAndDeserializeBinaryTree/SerializeAndDeserializeBinaryTreeSolution.cs) |H||
+|297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)|[Solution](https://github.com/fuchun2018/leetcode/blob/master/leetcode/SerializeAndDeserializeBinaryTree/SerializeAndDeserializeBinaryTreeSolution.cs) |Hard||
