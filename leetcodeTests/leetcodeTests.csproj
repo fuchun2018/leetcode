@@ -64,6 +64,7 @@
     <Compile Include="InorderTraversal\InorderTraversalSolutionTests.cs" />
     <Compile Include="IsAnagram\IsAnagramSolutionTests.cs" />
     <Compile Include="LongestConsecutive\LongestConsecutiveSolutionTests.cs" />
+    <Compile Include="LongestIncreasingPath\LongestIncreasingPathSolutionTests.cs" />
     <Compile Include="MajorityElement\MajorityElementSolutionTests.cs" />
     <Compile Include="MoveZeroes\MoveZeroesSolutionTests.cs" />
     <Compile Include="Permute\PermuteSolutionTests.cs" />
