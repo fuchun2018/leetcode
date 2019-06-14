@@ -15,7 +15,17 @@ namespace leetcode.LongestIncreasingPath.Tests
         public void LongestIncreasingPathTest()
         {
             var solution = new LongestIncreasingPathSolution();
-            var input = new int[][] { new int[]{ 1, 2, 3 }, new int[] { 4, 5, 6 }, new int[] { 7, 8, 9 } };
+            var input = new int[][] { new int[] { 9, 9, 4 }, new int[] { 6, 6, 8 }, new int[] { 2, 1, 1 } };
+            var result = solution.LongestIncreasingPath(input);
+            var expection = 4;
+            Assert.AreEqual(4, result);
+        }
+
+        [TestMethod()]
+        public void LongestIncreasingPathTest_Case_2()
+        {
+            var solution = new LongestIncreasingPathSolution();
+            var input = new int[][] { new int[] { 3, 4, 5 }, new int[] { 3, 2, 6 }, new int[] { 2, 2, 1 } };
             var result = solution.LongestIncreasingPath(input);
             var expection = 4;
             Assert.AreEqual(4, result);
