@@ -24,7 +24,7 @@ namespace leetcode.SerializeAndDeserializeBinaryTree
             return result;
         }
 
-        public TreeNode BinaryTreeRebuild(Queue<string> queue)
+        private TreeNode BinaryTreeRebuild(Queue<string> queue)
         {
             if((queue == null) || queue.Count == 0) return null;
             var element = queue.Dequeue();
