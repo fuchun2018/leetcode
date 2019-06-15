@@ -10,6 +10,7 @@ namespace leetcode.LongestIncreasingPath
     {
         public int LongestIncreasingPath(int[][] matrix)
         {
+            if (matrix.Length == 0) return matrix.Length;
             var result = 1;
             for (int i = 0; i < matrix.Length; i++)
             {
@@ -24,8 +25,8 @@ namespace leetcode.LongestIncreasingPath
         private int GetPathCount(int x, int y, int[][] matrix)
         {
             int max = 1;
-            if (dictionary.ContainsKey(x * matrix.Length + y)) return dictionary[x + y];
-            if ((y < matrix[1].Length - 1) && (matrix[x][y] < matrix[x][y + 1]))
+            if (dictionary.ContainsKey(x * matrix.Length + y)) return dictionary[x * matrix.Length + y];
+            if ((y < matrix[0].Length - 1) && (matrix[x][y] < matrix[x][y + 1]))
                 max = Math.Max(max, 1 + GetPathCount(x, y + 1, matrix));
             if ((y > 0) && (matrix[x][y] < matrix[x][y - 1]))
                 max = Math.Max(max, 1 + GetPathCount(x, y - 1, matrix));
