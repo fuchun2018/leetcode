@@ -21,11 +21,12 @@ namespace leetcode.LongestIncreasingPath
             }
             return result;
         }
-        Dictionary<int, int> dictionary = new Dictionary<int, int>();
+        Dictionary<string, int> dictionary = new Dictionary<string, int>();
         private int GetPathCount(int x, int y, int[][] matrix)
         {
             int max = 1;
-            if (dictionary.ContainsKey(x * matrix.Length + y)) return dictionary[x * matrix.Length + y];
+            if (dictionary.ContainsKey(string.Concat(x, "_", y)))
+                return dictionary[string.Concat(x, "_", y)];
             if ((y < matrix[0].Length - 1) && (matrix[x][y] < matrix[x][y + 1]))
                 max = Math.Max(max, 1 + GetPathCount(x, y + 1, matrix));
             if ((y > 0) && (matrix[x][y] < matrix[x][y - 1]))
@@ -35,7 +36,7 @@ namespace leetcode.LongestIncreasingPath
             if ((x > 0) && (matrix[x][y] < matrix[x - 1][y]))
                 max = Math.Max(max, 1 + GetPathCount(x - 1, y, matrix));
 
-            if (dictionary.ContainsKey(x * matrix.Length + y) != true) dictionary.Add(x * matrix.Length + y, max);
+            if (dictionary.ContainsKey(string.Concat(x, "_", y)) != true) dictionary.Add(string.Concat(x, "_", y), max);
             return max;
         }
     }

@@ -71,5 +71,20 @@ namespace leetcode.LongestIncreasingPath.Tests
             Assert.AreEqual(expection, result);
         }
 
+
+        [TestMethod()]
+        public void LongestIncreasingPathTest_Leetcode_TestCase_124()
+        {
+            var solution = new LongestIncreasingPathSolution();
+            var input = new int[][] {
+                new int[] { 17, 4, 6, 11, 4, 0, 17, 12, 19, 12, 12, 0 },
+                new int[] { 0,6,4,4,5,9,15,1,11,13,18,0 },
+                new int[] { 4,2,13,1,2,7,15,5,14,6,8,6 }
+                };
+            //[[17,4,6,11,4,0,17,12,19,12,12,0],[0,6,4,4,5,9,15,1,11,13,18,0],[4,2,13,1,2,7,15,5,14,6,8,6]]
+            var result = solution.LongestIncreasingPath(input);
+            var expection = 6;
+            Assert.AreEqual(expection, result);
+        }
     }
 }
