@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="DeleteNodeInLinkedList\DeleteNodeSolutionTests.cs" />
     <Compile Include="DivideTwoIntegers\DivideSolutionTests.cs" />
+    <Compile Include="FirstMissingPositive\FirstMissingPositiveSolutionTests.cs" />
     <Compile Include="GenerateParenthesis\GenerateParenthesisSolutionTests.cs" />
     <Compile Include="FizzBuzz\FizzBuzzSolutionTests.cs" />
     <Compile Include="HappyNumber\HappyNumberSolutionTests.cs" />

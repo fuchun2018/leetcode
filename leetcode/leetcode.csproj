@@ -45,6 +45,7 @@
     <Compile Include="common\TreeNode.cs" />
     <Compile Include="DeleteNodeInLinkedList\DeleteNodeSolution.cs" />
     <Compile Include="DivideTwoIntegers\DivideSolution.cs" />
+    <Compile Include="FirstMissingPositive\FirstMissingPositiveSolution.cs" />
     <Compile Include="GenerateParenthesis\GenerateParenthesisSolution.cs" />
     <Compile Include="FizzBuzz\FizzBuzzSolution.cs" />
     <Compile Include="HappyNumber\HappyNumberSolution.cs" />
