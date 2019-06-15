@@ -78,6 +78,7 @@
     <Compile Include="ThreeSum\ThreeSumSolutionTests.cs" />
     <Compile Include="TrapRainWater\TrapRainWaterSolutionTests.cs" />
     <Compile Include="WildcardMatch\WildcardMatchSolutionTests.cs" />
+    <Compile Include="WordBreak\WordBreakSolutionTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
