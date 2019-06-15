@@ -8,47 +8,34 @@ namespace leetcode.WordBreak
 {
     public class WordBreakSolution
     {
-        private Dictionary<char, List<string>> dictionary;
+        private HashSet<string> hashDictionary;
         public IList<string> WordBreak(string s, IList<string> wordDict)
         {
-            var result = new List<string>();
-            if (string.IsNullOrEmpty(s) || wordDict.Count == 0) return result;
-            dictionary = new Dictionary<char, List<string>>();
-            foreach (var item in wordDict)
-            {
-                if (dictionary.ContainsKey(item[0]))
-                {
-                    var list = dictionary[item[0]];
-                    if (list.Contains(item) != true) dictionary[item[0]].Add(item);
-                }
-                else
-                    dictionary.Add(item[0], new List<string> { item });
-            }
-            var wip = new List<string>();
-            Util(s, 0, wip, result);
-            return result;
+            hashDictionary = new HashSet<string>(wordDict);
+            if (string.IsNullOrEmpty(s) || wordDict.Count == 0) return new List<string>();
+            return Util(s, new Dictionary<string, List<string>>());
         }
 
-        private void Util(string s, int cursor, List<string> wip, List<string> result)
+        private List<string> Util(string s, Dictionary<string, List<string>> cache)
         {
-            if (cursor == s.Length)
+            if (cache.ContainsKey(s)) return cache[s];
+            List<string> list = new List<string>();
+            if (hashDictionary.Contains(s))
+                list.Add(s);
+            for (int i = 0; i <= s.Length; i++)
             {
-                result.Add(wip.Aggregate((a, b) => a + " " + b));
-                return;
-            }
-
-            var substring = s.Substring(cursor, s.Length - cursor);
-            if (dictionary.ContainsKey(substring[0]) != true) return;
-            var list = dictionary[substring[0]].Where(t => s.IndexOf(t) >= 0).ToList();
-            foreach (var item in list)
-            {
-                if (substring.IndexOf(item) == 0)
+                var substring = s.Substring(0, i);
+                if (hashDictionary.Contains(substring))
                 {
-                    wip.Add(item);
-                    Util(s, cursor + item.Length, wip, result);
-                    wip.Remove(item);
+                    var result = Util(s.Substring(i), cache);
+                    foreach (var item in result)
+                    {
+                        list.Add(substring + " " + item);
+                    }
                 }
             }
+            cache.Add(s, list);
+            return list;
         }
     }
 }

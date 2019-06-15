@@ -76,6 +76,10 @@ namespace leetcode.WordBreak.Tests
             {
                 Assert.IsTrue(expect.Contains(item));
             }
+            foreach (var item in expect)
+            {
+                Assert.IsTrue(result.Contains(item));
+            }
         }
     }
 }
