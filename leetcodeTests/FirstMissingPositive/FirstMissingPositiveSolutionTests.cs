@@ -1,10 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using leetcode.FirstMissingPositive;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace leetcode.FirstMissingPositive.Tests
 {
@@ -17,6 +11,36 @@ namespace leetcode.FirstMissingPositive.Tests
             var solution = new FirstMissingPositiveSolution();
             var input = new int[] { 1, 2, 0 };
             var expect = 3;
+            var result = solution.FirstMissingPositive(input);
+            Assert.AreEqual(expect, result);
+        }
+
+        [TestMethod()]
+        public void FirstMissingPositiveTest_Case_2()
+        {
+            var solution = new FirstMissingPositiveSolution();
+            var input = new int[] { 3, 4, -1, 1 };
+            var expect = 2;
+            var result = solution.FirstMissingPositive(input);
+            Assert.AreEqual(expect, result);
+        }
+
+        [TestMethod()]
+        public void FirstMissingPositiveTest_Case_3()
+        {
+            var solution = new FirstMissingPositiveSolution();
+            var input = new int[] { 7, 8, 9, 11, 1 };
+            var expect = 2;
+            var result = solution.FirstMissingPositive(input);
+            Assert.AreEqual(expect, result);
+        }
+
+        [TestMethod()]
+        public void FirstMissingPositiveTest_Case_4()
+        {
+            var solution = new FirstMissingPositiveSolution();
+            var input = new int[] {  };
+            var expect = 1;
             var result = solution.FirstMissingPositive(input);
             Assert.AreEqual(expect, result);
         }
