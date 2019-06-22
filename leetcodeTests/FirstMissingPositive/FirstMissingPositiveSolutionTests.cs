@@ -29,8 +29,8 @@ namespace leetcode.FirstMissingPositive.Tests
         public void FirstMissingPositiveTest_Case_3()
         {
             var solution = new FirstMissingPositiveSolution();
-            var input = new int[] { 7, 8, 9, 11, 1 };
-            var expect = 2;
+            var input = new int[] { 7, 8, 9, 11, 12 };
+            var expect = 1;
             var result = solution.FirstMissingPositive(input);
             Assert.AreEqual(expect, result);
         }
@@ -41,6 +41,26 @@ namespace leetcode.FirstMissingPositive.Tests
             var solution = new FirstMissingPositiveSolution();
             var input = new int[] {  };
             var expect = 1;
+            var result = solution.FirstMissingPositive(input);
+            Assert.AreEqual(expect, result);
+        }
+
+        [TestMethod()]
+        public void FirstMissingPositiveTest_Case_5()
+        {
+            var solution = new FirstMissingPositiveSolution();
+            var input = new int[] { 1, 1};
+            var expect = 2;
+            var result = solution.FirstMissingPositive(input);
+            Assert.AreEqual(expect, result);
+        }
+
+        [TestMethod()]
+        public void FirstMissingPositiveTest_Case_6()
+        {
+            var solution = new FirstMissingPositiveSolution();
+            var input = new int[] { 2, 1 };
+            var expect = 3;
             var result = solution.FirstMissingPositive(input);
             Assert.AreEqual(expect, result);
         }
