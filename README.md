@@ -6,7 +6,7 @@ I am starting my solving-Leetcode-problem journey since May 2019 by Visual studi
 
 These might not the best solutions in the world, but I am trying to solve these problems clean and easy. If you want to get the best solution, you know you can get a sample from the distribution chart. That might be the place you are looking for.
 
-I highly recommend leetcode users keeping all the trail during your problem solving, no matter it is an easy problem or a difficult one. There are two reasons: first, you can keep a note about your current thinking and methodology; there are no good ideas or bad ideas when you are practicing, however, sometimes 'why' is more important than 'how'. the second one is the habit: please try to get used to pushing your code every small piece of work, it will save you (literately) in the future.
+I highly recommend leetcode users keeping all the trail during your problem solving, no matter it is an easy problem or a difficult one. There are two reasons: first, you can keep a note about your current thinking and methodology; there are no good ideas or bad ideas when you are practicing, however, sometimes 'why' is more important than 'how'. the second one is the habit: please try to get used to pushing your code every small piece of work, it will save you (literally) someday.
 
 You can keep it in your github, in your blog, in your diary, in a Trello, or anywhere you are comfortable (in my opinion, instead of mark source code or leave comments behind or after your source code, make your source code readable will be more efficiency). 
 
