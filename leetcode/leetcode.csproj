@@ -67,6 +67,7 @@
     <Compile Include="TrapRainWater\TrapRainWaterSolution.cs" />
     <Compile Include="WildcardMatch\WildcardMatchSolution.cs" />
     <Compile Include="WordBreak\WordBreakSolution.cs" />
+    <Compile Include="WordSearch\WordSearchSolution.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

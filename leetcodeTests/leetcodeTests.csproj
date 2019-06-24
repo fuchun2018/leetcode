@@ -80,6 +80,7 @@
     <Compile Include="TrapRainWater\TrapRainWaterSolutionTests.cs" />
     <Compile Include="WildcardMatch\WildcardMatchSolutionTests.cs" />
     <Compile Include="WordBreak\WordBreakSolutionTests.cs" />
+    <Compile Include="WordSearch\WordSearchSolutionTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
