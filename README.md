@@ -32,3 +32,4 @@ Finally, enjoy your leetcode journey!
 |297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)|[Solution](https://github.com/fuchun2018/leetcode/blob/master/leetcode/SerializeAndDeserializeBinaryTree/SerializeAndDeserializeBinaryTreeSolution.cs) |Hard||
 |329|[Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/)|[Solution](https://github.com/fuchun2018/leetcode/blob/master/leetcode/LongestIncreasingPath/LongestIncreasingPathSolution.cs) |Hard||
 |140|[Word Break II](https://leetcode.com/problems/word-break-ii/)|[Solution](https://github.com/fuchun2018/leetcode/blob/master/leetcode/WordBreak/WordBreakSolution.cs) |Hard||
+|41|[First Missing Positive](https://leetcode.com/problems/first-missing-positive/)|[Solution](https://github.com/fuchun2018/leetcode/blob/master/leetcode/FirstMissingPositive/FirstMissingPositiveSolution.cs) |Hard||
