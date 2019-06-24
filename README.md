@@ -4,7 +4,7 @@ Please leave a star if you like my solution 😊
 
 I am starting my solving-Leetcode-problem journey since May 2019 by Visual studio 2019 and C#. Besides source code which solving specific problems, there are test cases in another solution which contains all the cases from examples, Leetcode Online Judge, or myself.
 
-These might not the best solutions in the world, but I am trying to slove these problems clean and easy. In fact, if you want to get a best solution. You know you can get a sample from the distribution chart. That might be the place you are looking for.
+These might not the best solutions in the world, but I am trying to slove these problems clean and easy. In fact, if you want to get a best solution. You know you can get a sample from the distribution chart: that might be the place you are looking for.
 
 I highly recommand leetcode users keep all the trail when you are trying to solve a problem, either it is a easy problem or a difficult one. You can keep it in you github, in your blog, in your diary, in a Trello, or anywhere you are comfortable (in my opinion, instead of mark source code or leave comments behind or after your source code, make your source code readable will be more efficiency). 
 
@@ -14,7 +14,7 @@ Meanwhile, form a good habit on coding. For example, naming, trying not to use s
 
 https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions
 
-Another good habit is testing. The testing will help you to consider the corner conditions (No kidding!)
+Another good habit is testing. The testing will help you to keep eye on the corner conditions (No kidding!)
 
 Finally, enjoy your leetcode journey!
 
@@ -31,3 +31,4 @@ Finally, enjoy your leetcode journey!
 |329|[Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/)|[Solution](https://github.com/fuchun2018/leetcode/blob/master/leetcode/LongestIncreasingPath/LongestIncreasingPathSolution.cs) |Hard||
 |140|[Word Break II](https://leetcode.com/problems/word-break-ii/)|[Solution](https://github.com/fuchun2018/leetcode/blob/master/leetcode/WordBreak/WordBreakSolution.cs) |Hard||
 |41|[First Missing Positive](https://leetcode.com/problems/first-missing-positive/)|[Solution](https://github.com/fuchun2018/leetcode/blob/master/leetcode/FirstMissingPositive/FirstMissingPositiveSolution.cs) |Hard||
+|212|[Word Search II](https://leetcode.com/problems/word-search-ii/)|[Solution](https://github.com/fuchun2018/leetcode/blob/master/leetcode/WordSearch/WordSearchSolution.cs) |Hard||
