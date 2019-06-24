@@ -58,22 +58,29 @@
   <ItemGroup>
     <Compile Include="DeleteNodeInLinkedList\DeleteNodeSolutionTests.cs" />
     <Compile Include="DivideTwoIntegers\DivideSolutionTests.cs" />
+    <Compile Include="FirstMissingPositive\FirstMissingPositiveSolutionTests.cs" />
     <Compile Include="GenerateParenthesis\GenerateParenthesisSolutionTests.cs" />
     <Compile Include="FizzBuzz\FizzBuzzSolutionTests.cs" />
     <Compile Include="HappyNumber\HappyNumberSolutionTests.cs" />
     <Compile Include="InorderTraversal\InorderTraversalSolutionTests.cs" />
     <Compile Include="IsAnagram\IsAnagramSolutionTests.cs" />
     <Compile Include="LongestConsecutive\LongestConsecutiveSolutionTests.cs" />
+    <Compile Include="LongestIncreasingPath\LongestIncreasingPathSolutionTests.cs" />
     <Compile Include="MajorityElement\MajorityElementSolutionTests.cs" />
     <Compile Include="MoveZeroes\MoveZeroesSolutionTests.cs" />
     <Compile Include="Permute\PermuteSolutionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegularExpression\RegularExpressionSolutionTests.cs" />
+    <Compile Include="ReverseInteger\ReverseIntegerSolutionTests.cs" />
+    <Compile Include="ReverseLinkedList\ReverseListSolutionTests.cs" />
     <Compile Include="ReverseString\ReverseStringSolutionTests.cs" />
+    <Compile Include="SerializeAndDeserializeBinaryTree\SerializeAndDeserializeBinaryTreeSolutionTests.cs" />
     <Compile Include="SingleNumber\SingleNumberSolutionTests.cs" />
     <Compile Include="ThreeSum\ThreeSumSolutionTests.cs" />
     <Compile Include="TrapRainWater\TrapRainWaterSolutionTests.cs" />
     <Compile Include="WildcardMatch\WildcardMatchSolutionTests.cs" />
+    <Compile Include="WordBreak\WordBreakSolutionTests.cs" />
+    <Compile Include="WordSearch\WordSearchSolutionTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
