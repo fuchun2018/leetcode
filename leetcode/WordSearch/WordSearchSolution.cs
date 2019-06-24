@@ -10,6 +10,7 @@ namespace leetcode.WordSearch
     {
         public IList<string> FindWords(char[][] board, string[] words)
         {
+            if(words.Length == 0 || board.Length == 0) return new List<string>();
             return null;
         }
     }
