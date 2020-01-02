@@ -63,11 +63,14 @@
     <Compile Include="ReverseString\ReverseStringSolution.cs" />
     <Compile Include="SerializeAndDeserializeBinaryTree\SerializeAndDeserializeBinaryTreeSolution.cs" />
     <Compile Include="SingleNumber\SingleNumberSolution.cs" />
+    <Compile Include="ThreeSum\MaximumPathSumSolution.cs" />
     <Compile Include="ThreeSum\ThreeSumSolution.cs" />
     <Compile Include="TrapRainWater\TrapRainWaterSolution.cs" />
     <Compile Include="WildcardMatch\WildcardMatchSolution.cs" />
     <Compile Include="WordBreak\WordBreakSolution.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="MaximumPathSum\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
