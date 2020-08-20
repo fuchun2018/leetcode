@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="common\ListNode.cs" />
     <Compile Include="common\TreeNode.cs" />
+    <Compile Include="ContainerWithMostWater\ContainerWithWaterSolution.cs" />
     <Compile Include="DeleteNodeInLinkedList\DeleteNodeSolution.cs" />
     <Compile Include="DivideTwoIntegers\DivideSolution.cs" />
     <Compile Include="FirstMissingPositive\FirstMissingPositiveSolution.cs" />
@@ -69,6 +70,8 @@
     <Compile Include="WildcardMatch\WildcardMatchSolution.cs" />
     <Compile Include="WordBreak\WordBreakSolution.cs" />
     <Compile Include="WordSearch\WordSearchSolution.cs" />
+    <Compile Include="ZigzagConversion\ZigzagConversionSolution.cs" />
+    <Compile Include="ZigzagConversion\ZigZagConversionTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="MaximumPathSum\" />
