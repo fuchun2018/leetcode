@@ -52,12 +52,14 @@
     <Compile Include="HappyNumber\HappyNumberSolution.cs" />
     <Compile Include="InorderTraversal\InorderTraversalSolution.cs" />
     <Compile Include="IsAnagram\IsAnagramSolution.cs" />
+    <Compile Include="LinkedListCycle\LinkedListCycleSolution.cs" />
     <Compile Include="LongestConsecutive\LongestConsecutiveSolution.cs" />
     <Compile Include="LongestIncreasingPath\LongestIncreasingPathSolution.cs" />
     <Compile Include="MajorityElement\MajorityElementSolution.cs" />
     <Compile Include="MergeKSortedLists\MergeKSortedListsSolution.cs" />
     <Compile Include="MergeTwoSortedList\MergeTwoSortedListSolution.cs" />
     <Compile Include="MoveZeroes\MoveZeroesSolution.cs" />
+    <Compile Include="PalindromeLinkedList\PalindromeLinkedListSolution.cs" />
     <Compile Include="Permute\PermuteSolution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegularExpression\RegularExpressionSolution.cs" />

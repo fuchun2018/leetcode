@@ -81,6 +81,7 @@
     <Compile Include="MajorityElement\MajorityElementSolutionTests.cs" />
     <Compile Include="MergeSortedList\MergeSortedListTests.cs" />
     <Compile Include="MoveZeroes\MoveZeroesSolutionTests.cs" />
+    <Compile Include="PalindromeLinkedList\PalindromeLinkedListTests.cs" />
     <Compile Include="Permute\PermuteSolutionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegularExpression\RegularExpressionSolutionTests.cs" />
