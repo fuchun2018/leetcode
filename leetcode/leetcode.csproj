@@ -55,6 +55,8 @@
     <Compile Include="LongestConsecutive\LongestConsecutiveSolution.cs" />
     <Compile Include="LongestIncreasingPath\LongestIncreasingPathSolution.cs" />
     <Compile Include="MajorityElement\MajorityElementSolution.cs" />
+    <Compile Include="MergeKSortedLists\MergeKSortedListsSolution.cs" />
+    <Compile Include="MergeTwoSortedList\MergeTwoSortedListSolution.cs" />
     <Compile Include="MoveZeroes\MoveZeroesSolution.cs" />
     <Compile Include="Permute\PermuteSolution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
