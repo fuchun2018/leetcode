@@ -75,6 +75,7 @@
     <Compile Include="FizzBuzz\FizzBuzzSolutionTests.cs" />
     <Compile Include="HappyNumber\HappyNumberSolutionTests.cs" />
     <Compile Include="InorderTraversal\InorderTraversalSolutionTests.cs" />
+    <Compile Include="InterviewChallenge\LinkedListTests.cs" />
     <Compile Include="IsAnagram\IsAnagramSolutionTests.cs" />
     <Compile Include="LongestConsecutive\LongestConsecutiveSolutionTests.cs" />
     <Compile Include="LongestIncreasingPath\LongestIncreasingPathSolutionTests.cs" />
@@ -83,6 +84,7 @@
     <Compile Include="Permute\PermuteSolutionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegularExpression\RegularExpressionSolutionTests.cs" />
+    <Compile Include="RemoveNthNode\RemoveNthNodeTests.cs" />
     <Compile Include="ReverseInteger\ReverseIntegerSolutionTests.cs" />
     <Compile Include="ReverseLinkedList\ReverseListSolutionTests.cs" />
     <Compile Include="ReverseString\ReverseStringSolutionTests.cs" />

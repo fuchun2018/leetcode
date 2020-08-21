@@ -59,8 +59,10 @@
     <Compile Include="Permute\PermuteSolution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegularExpression\RegularExpressionSolution.cs" />
+    <Compile Include="RemoveNthNode\RemoveNthNodeSolution.cs" />
     <Compile Include="ReverseInteger\ReverseIntegerSolution.cs" />
     <Compile Include="ReverseLinkedList\ReverseListSolution.cs" />
+    <Compile Include="ReverseLinkList\ReverseLinkedListSolution.cs" />
     <Compile Include="ReverseString\ReverseStringSolution.cs" />
     <Compile Include="SerializeAndDeserializeBinaryTree\SerializeAndDeserializeBinaryTreeSolution.cs" />
     <Compile Include="SingleNumber\SingleNumberSolution.cs" />
