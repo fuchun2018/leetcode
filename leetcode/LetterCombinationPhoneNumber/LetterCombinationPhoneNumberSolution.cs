@@ -9,6 +9,35 @@ namespace leetcode.LetterCombinationPhoneNumber
 {
     public class LetterCombinationPhoneNumberSolution
     {
+
+        public string RestoreString(string s, int[] indices)
+        {
+            char[] ca = new char[s.Length];
+            for (int i = 0; i < s.Length; i++)
+            {
+                var index = indices[i];
+                ca[index] = s[i];
+            }
+
+
+
+            //foreach (int index in indices)
+            //{
+            //    ca[index] = s[indices[index]];
+            //}
+
+            return string.Join("", ca);
+        }
+        public int FindKthPositive(int[] arr, int k)
+        {
+            int i = 1;
+            while (true)
+            {
+                if (!arr.Contains(i)) k--;
+                if (k == 0) return i;
+                i++;
+            }
+        }
         public IList<string> LetterCombinations(string digits)
         {
             var dictionary = new Dictionary<char, string>
