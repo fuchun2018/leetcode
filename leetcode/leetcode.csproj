@@ -52,6 +52,7 @@
     <Compile Include="HappyNumber\HappyNumberSolution.cs" />
     <Compile Include="InorderTraversal\InorderTraversalSolution.cs" />
     <Compile Include="IsAnagram\IsAnagramSolution.cs" />
+    <Compile Include="LetterCombinationPhoneNumber\LetterCombinationPhoneNumberSolution.cs" />
     <Compile Include="LinkedListCycle\LinkedListCycleSolution.cs" />
     <Compile Include="LongestConsecutive\LongestConsecutiveSolution.cs" />
     <Compile Include="LongestIncreasingPath\LongestIncreasingPathSolution.cs" />

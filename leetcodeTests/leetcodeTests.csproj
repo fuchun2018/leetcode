@@ -76,6 +76,7 @@
     <Compile Include="HappyNumber\HappyNumberSolutionTests.cs" />
     <Compile Include="InorderTraversal\InorderTraversalSolutionTests.cs" />
     <Compile Include="IsAnagram\IsAnagramSolutionTests.cs" />
+    <Compile Include="LetterCombinationPhoneNumber\LetterCombinationPhoneNumberTests.cs" />
     <Compile Include="LongestConsecutive\LongestConsecutiveSolutionTests.cs" />
     <Compile Include="LongestIncreasingPath\LongestIncreasingPathSolutionTests.cs" />
     <Compile Include="MajorityElement\MajorityElementSolutionTests.cs" />
