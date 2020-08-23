@@ -81,6 +81,7 @@
     <Compile Include="LongestIncreasingPath\LongestIncreasingPathSolutionTests.cs" />
     <Compile Include="MajorityElement\MajorityElementSolutionTests.cs" />
     <Compile Include="MergeSortedList\MergeSortedListTests.cs" />
+    <Compile Include="MinimunWindowSubstring\MinimunWindowSubstringTests.cs" />
     <Compile Include="MoveZeroes\MoveZeroesSolutionTests.cs" />
     <Compile Include="PalindromeLinkedList\PalindromeLinkedListTests.cs" />
     <Compile Include="Permute\PermuteSolutionTests.cs" />

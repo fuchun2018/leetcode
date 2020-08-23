@@ -59,6 +59,7 @@
     <Compile Include="MajorityElement\MajorityElementSolution.cs" />
     <Compile Include="MergeKSortedLists\MergeKSortedListsSolution.cs" />
     <Compile Include="MergeTwoSortedList\MergeTwoSortedListSolution.cs" />
+    <Compile Include="MinimunWindowSubstring\MininumWindowSubstringSolution.cs" />
     <Compile Include="MoveZeroes\MoveZeroesSolution.cs" />
     <Compile Include="PalindromeLinkedList\PalindromeLinkedListSolution.cs" />
     <Compile Include="Permute\PermuteSolution.cs" />
